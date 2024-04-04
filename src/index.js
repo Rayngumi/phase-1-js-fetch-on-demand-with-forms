@@ -9,8 +9,7 @@ const init = () => {
       fetch(`http://localhost:3000/movies/${input.value}`)
         .then((response) => response.json())
         .then((data) => {
-          // Display fetched data on the page
-          const title = document.querySelector("section#movieDetails h4");
+            const title = document.querySelector("section#movieDetails h4");
           const summary = document.querySelector("section#movieDetails p");
           title.innerText = data.title;
           summary.innerText = data.summary;
